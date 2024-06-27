@@ -1,0 +1,47 @@
+"Chromium";v="127", "Not)A;Brand";v="99"?0"Linux"
+"Chromium";v="127", "Not)A;Brand";v="99"?0"Windows"
+"Chromium";v="127", "Not)A;Brand";v="99"?0"macOS"
+"Chromium"; v="127", "Not)A;Brand"; v="99"?0"Windows"
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/128.0.6536.1 Mobile/15E148 Safari/604.1
+Mozilla/5.0 (Linux; Android 12; M2102J20SG Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 Instagram 337.0.0.0.50 Android (31/12; 440dpi; 1080x2179; Xiaomi/POCO; M2102J20SG; vayu; qcom; tr_TR; 611927526)
+Mozilla/5.0 (Linux; Android 14; SM-S911B Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 Instagram 337.0.0.0.50 Android (34/14; 480dpi; 1080x2214; samsung; SM-S911B; dm1q; qcom; tr_TR; 611927526)
+Mozilla/5.0 (Linux; Android 14; Pixel 8 Build/AP1A.240505.005; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 Instagram 337.0.0.0.62 Android (34/14; 420dpi; 1080x2205; Google/google; Pixel 8; shiba; shiba; it_IT; 612296008)
+Mozilla/5.0 (Linux; Android 10; MAR-LX1A Build/HUAWEIMAR-L21A; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 Instagram 337.0.0.0.62 Android (29/10; 480dpi; 1080x2107; HUAWEI; MAR-LX1A; HWMAR; kirin710; it_IT; 612296229)
+Mozilla/5.0 (Linux; Android 9; BV9800Pro Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.186 Mobile Safari/537.36 Instagram 337.0.0.0.50 Android (28/9; 480dpi; 1080x2116; Blackview; BV9800Pro; BV9800Pro; mt6771; it_IT; 611927347)
+Mozilla/5.0 (Linux; Android 14; Pixel 6 Build/AP1A.240505.004; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.165 Mobile Safari/537.36 Instagram 337.0.0.0.62 Android (34/14; 420dpi; 1080x2209; Google/google; Pixel 6; oriole; oriole; en_US; 612296382)
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone14,2; iOS 17_5_1; tr_TR; tr; scale=3.00; 1170x2532; 614064327) NW/1
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone13,3; iOS 17_5_1; tr_TR; tr; scale=3.00; 1170x2532; 614064327) NW/1
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone14,7; iOS 17_5_1; en_US; en; scale=3.00; 1170x2532; 614064327) NW/3
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone15,4; iOS 17_5_1; it_IT; it; scale=3.00; 1179x2556; 614064327) NW/1
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone14,8; iOS 17_5_1; de_DE; de; scale=3.00; 1284x2778; 614064327)
+"Not/A)Brand";v="8", "Chromium";v="126", "CCleaner Browser";v="126"?0"Windows"
+"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.25444.62", "CCleaner Browser";v="126.0.25444.62"?0"Windows"
+"Not/A)Brand"; v="8", "Chromium"; v="126", "CCleaner Browser"; v="126"?0"Windows"
+"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.25444.62", "CCleaner Browser";v="126.0.25444.62"?0Windows
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 CCleaner/126.0.0.0
+"Not/A)Brand"; v="8", "Chromium"; v="126", "CCleaner Browser"; v="126"?0"Windows"
+"Not/A)Brand";v="8", "Chromium";v="126", "CCleaner Browser";v="126"?0Windows
+"Not/A)Brand";v="8", "Chromium";v="126", "CCleaner Browser";v="126"?0"Windows"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 CCleaner/126.0.0.0
+"Not/A)Brand"; v="8.0.0.0", "Chromium"; v="126.0.25444.62", "CCleaner Browser"; v="126.0.25444.62"?0"Windows"
+"CCleaner Browser"; v="126.0.0.0", "Chromium"; v="126.0.0.0"?0"Windows"
+"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.25444.62", "CCleaner Browser";v="126.0.25444.62"?0"Windows"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 CCleaner/126.0.0.0
+"CCleaner Browser"; v="126.0.0.0", "Chromium"; v="126.0.0.0"?0"Windows"
+"Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.25444.62", "CCleaner Browser";v="126.0.25444.0?0"Windows"
+"Not/A)Brand"; v="8.0.0.0", "Chromium"; v="126.0.25444.62", "CCleaner Browser"; v="126.0.25444.62"?0"Windows"
+"Not/A)Brand";v="8", "Chromium";v="126", "CCleaner Browser";v="126"?0"Windows"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.0"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/83.0.0.0
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0?1"Android"
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/83.0.0.0
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0"?1Android
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0"?1"Android"
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0", "Opera"; v="112.5196.0"?1"Android"
+"OperaMobile";v="83.1.4388.80509", "Chromium";v="126.0.6478.114", " Not A;Brand";v="99.0.0.0", "Opera";v="112.0.5196.0"?0"Android"
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0", "Opera"; v="112.5196.0"?1"Android"
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 OPR/83.0.0.0
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/83.0.0.0
+Mozilla/5.0 (Linux; Android 13; Infinix X6525) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.1.4388.80509 Mobile Safari/537.36 OPR/83.1.4388.80509;
+"OperaMobile"; v="83.1.4388.80509", "Chromium"; v="126.0.6478.114", "Not A;Brand"; v="99.0.0.0", "Opera"; v="112.0.5196.0"?1"Android"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/83.0.0.0
