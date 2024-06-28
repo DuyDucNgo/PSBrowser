@@ -3,7 +3,7 @@ function Get-Matcher {
       [Parameter(Mandatory = $false)]
       [string] $RegexFile = "BrowserPatterns.json",
       [Parameter(Mandatory = $false)]
-      [string] $DataFile = "UACHs.txt"
+      [string] $DataFile = "UACHs.csv"
     )
   
     # Validate file paths
