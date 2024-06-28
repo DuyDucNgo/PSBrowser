@@ -452,7 +452,7 @@
     {
         "name": "Edge (Chromium) for Linux",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}.*\\d{1,3}\").*(Linux)",
+        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}\\.\\d{1,3}\").*(Linux)",
         "negative": "GingerClient"
     },
     {
