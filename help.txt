@@ -9,9 +9,9 @@ String pattern in json file.
 ===
 Running:
 1. Download 3 files and save them in same folder in local comupter
-	- BrowserReg.json	
-	- UACH.txt
-	- GetToken.ps1
+	- BrowserPatterns.json	
+	- UACHs.txt
+	- GetTokenV2.ps1
 2. Copy list of UACH from Unmap sheet to UACH.txt and save
 3. Open Powershell tool.
 4. Run function Get-Matcher
