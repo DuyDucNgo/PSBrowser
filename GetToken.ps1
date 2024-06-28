@@ -1,7 +1,8 @@
 function Get-Matcher {
-    Write-Host "Reading regex from Json file"
-    $regexFile = "BrowserReg.json"
-    $dataFile = "UACH.txt"
+    Param(
+        $regexFile = "BrowserReg.json",
+        $dataFile = "UACH.txt"
+    )
     $result = @{}
     if ((Test-Path $regexFile) -and (Test-Path $dataFile)) {
         #Reading json file
@@ -39,4 +40,5 @@ function Get-Matcher {
         Write-Host "Please check the file location: BrowserReg.json and UACH.txt"
     }
 }
+#Running Get-Matcher with default param
 Get-Matcher
