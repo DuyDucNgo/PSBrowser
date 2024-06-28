@@ -1,0 +1,18 @@
+String pattern in json file.
+\\s -> 1 space
+\\d -> 1 digit
+\" -> "
+\\. -> 1 dot
+\\s? -> 1 space or not
+
+
+===
+Running:
+1. Download 3 files and save them in same folder in local comupter
+	- BrowserReg.json	
+	- UACH.txt
+	- GetToken.ps1
+2. Copy list of UACH from Unmap sheet to UACH.txt and save
+3. Open Powershell tool.
+4. Run function Get-Matcher
+5. Show result.
