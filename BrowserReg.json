@@ -306,13 +306,13 @@
         "negative": "GingerClient"
     },
     {
-        "name": "Coc Coc UA-CH",
+        "name": "Coc Coc",
         "group": 1,
         "pattern": "(\"Coc\\s?Coc\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android|Windows|macOS)",
         "negative": "GingerClient"
     },
     {
-        "name": "Unknown Sidekick Browser UA-CHCH",
+        "name": "Unknown Sidekick Browser",
         "group": 1,
         "pattern": "(\"Sidekick\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Windows|macOS|Linux)",
         "negative": "GingerClient"
@@ -324,13 +324,13 @@
         "negative": "GingerClient"
     },
     {
-        "name": "CCleaner Browser for Windows UA-CH",
+        "name": "CCleaner Browser for Windows",
         "group": 1,
         "pattern": "(\"CCleaner Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Windows)",
         "negative": "GingerClient"
     },
     {
-        "name": "Avast Secure Browser UA-CH",
+        "name": "Avast Secure Browser",
         "group": 1,
         "pattern": "(\"Avast Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3}))",
         "negative": "GingerClient"
@@ -342,7 +342,7 @@
         "negative": "GingerClient"
     },
     {
-        "name": "AVG Secure Browser UA-CH",
+        "name": "AVG Secure Browser",
         "group": 1,
         "pattern": "(\"AVG Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3}))",
         "negative": "GingerClient"
@@ -384,12 +384,6 @@
         "negative": "GingerClient"
     },
     {
-        "name": "Aloha Browser for iOS",
-        "group": 1,
-        "pattern": "(AlohaBrowserApp/\\d{1,3}[.\\d]*).*(iPhone|iPad|iPod|iOS)",
-        "negative": "GingerClient"
-    },
-    {
         "name": "Aloha Browser for iOS (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Macintosh).*(AlohaBrowser/\\d{1,3}[.\\d]*)",
@@ -408,7 +402,7 @@
         "negative": "GingerClient"
     },
     {
-        "name": "Samsung Browser (Mobile in desktop mode) UA-CH",
+        "name": "Samsung Browser (Mobile in desktop mode)",
         "group": 1,
         "pattern": "(Samsung Internet\";\\s?v=\"\\d{1,3}\\.\\d{1,2}).*(Linux x86_64)",
         "negative":"GingerClient|Android|iOS"
@@ -420,7 +414,7 @@
         "negative": "GingerClient"
     },
     {
-        "name": "Samsung Browser UA-CH",
+        "name": "Samsung Browser",
         "group": 1,
         "pattern": "(Samsung Internet\";\\s?v=\"\\d{1,3}\\.\\d{1,2}).*(Android|iOS)",
         "negative":"GingerClient|Linux x86_64"
@@ -476,7 +470,7 @@
     {
         "name": "Edge for Android",
         "group": 2,
-    "pattern": "(Android).*(EdgA/\\d{3}\\.\\d{1,2})",
+        "pattern": "(Android).*(EdgA/\\d{3}\\.\\d{1,2})",
         "negative": "GingerClient"
     },
     {
@@ -552,13 +546,13 @@
         "negative": "GingerClient|Android|HbbTV|OPRGX/|Crypto"
     },
     {
-        "name": "Opera One UA-CH",
+        "name": "Opera One",
         "group": 1,
         "pattern": "(\"Opera\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3})).*(Chromium)?.*(Windows|Linux|macOS|Macintosh)",
         "negative": "GingerClient|Android|Crypto"
     },
     {
-        "name": "Opera GX UA-CH",
+        "name": "Opera GX",
         "group": 1,
         "pattern": "(\"Opera\\s?GX\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Chromium)?.*(Windows|macOS)",
         "negative": "GingerClient"
@@ -588,7 +582,7 @@
         "negative": "GingerClient"
     },
     {
-        "name": "Opera Crypto Desktop UA-CH Testing",
+        "name": "Opera Crypto Desktop",
         "group": 2,
         "pattern": "(Chromium)?.*(\"Opera Crypto\";\\s?v=\"\\d{1,3}(\"|[.\\d]+)).*(Chromium)?",
         "negative":"GingerClient|OperaMobile|iOS|iPhone|iPad"
@@ -596,14 +590,14 @@
     {
         "name": "Opera Mobile",
         "group": 2,
-        "pattern": "(Android).*(OPR/[89][.\\d]{2,3})",
+        "pattern": "(Android).*(OPR/\\d{1,3}\\.\\d{1,2})",
         "negative": "GingerClient|\\sOPT/|; wv\\)"
     },
     {
-        "name": "Opera Mobile UA-CH",
+        "name": "Opera Mobile",
         "group": 1,
         "pattern": "(\"OperaMobile\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative":"Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
+        "negative": "GingerClient|\\sOPT/|; wv\\)"
     },
     {
         "name": "Opera Touch for Android",
@@ -684,7 +678,7 @@
         "negative":"Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
     },
     {
-        "name": "Chrome Mobile UA-CH",
+        "name": "Chrome Mobile",
         "group": 1,
         "pattern": "(\"Google Chrome\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
         "negative":"Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
@@ -704,13 +698,13 @@
     {
         "name": "Chrome",
         "group": 2,
-        "pattern": "(Windows|Linux|Macintosh|macOS).*(Chrome/1\\d{2}[\\.0]{3})",
+        "pattern": "(Windows|Linux|Macintosh).*(Chrome/1\\d{2}[\\.0]{3})",
         "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
     },
     {
         "name": "Chrome",
         "group": 1,
-        "pattern": "(\"Google\\s?Chrome\";\\s?v\\s?=\\s?\"1\\d{2}(\"|[.\\d]{1,3})).*(Windows)",
+        "pattern": "(\"Google\\s?Chrome\";\\s?v\\s?=\\s?\"1\\d{2}(\"|[.\\d]{1,3})).*(Windows|Linux|macOS)",
         "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
     },
     {
@@ -726,15 +720,9 @@
         "negative": "Android"
     },
     {
-        "name": "Crawlwer Autotool",
+        "name": "Unknown Crawlwer Autotool / 79609",
         "group": 1,
         "pattern": "(Crawlwer|crawler|http)",
-        "negative": "Negative"
-    },
-    {
-        "name": "Unknown / 17074",
-        "group": 1,
-        "pattern": "(Windows.*(Macintosh|iPhone|iPad|Android))",
         "negative": "Negative"
     }
 ]

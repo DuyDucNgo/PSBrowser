@@ -13,7 +13,7 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (K
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone13,3; iOS 17_5_1; tr_TR; tr; scale=3.00; 1170x2532; 614064327) NW/1
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone14,7; iOS 17_5_1; en_US; en; scale=3.00; 1170x2532; 614064327) NW/3
 Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone15,4; iOS 17_5_1; it_IT; it; scale=3.00; 1179x2556; 614064327) NW/1
-Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 337.0.2.24.92 (iPhone14,8; iOS 17_5_1; de_DE; de; scale=3.00; 1284x2778; 614064327)
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/21F90 Instagram 338.0.2.24.92 (iPhone14,8; iOS 17_5_1; de_DE; de; scale=3.00; 1284x2778; 614064327)
 "Not/A)Brand";v="8", "Chromium";v="126", "CCleaner Browser";v="126"?0"Windows"
 "Not/A)Brand";v="8.0.0.0", "Chromium";v="126.0.25444.62", "CCleaner Browser";v="126.0.25444.62"?0"Windows"
 "Not/A)Brand"; v="8", "Chromium"; v="126", "CCleaner Browser"; v="126"?0"Windows"
