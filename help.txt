@@ -1,18 +1,22 @@
+-------------------------------------
 String pattern in json file.
-\\s -> 1 space
-\\d -> 1 digit
+-------------------------------------
+Json -> Regex -> meaning
+\\s -> \s -> 1 space
+\\d -> \d -> 1 digit
 \" -> "
-\\. -> 1 dot
-\\s? -> 1 space or not
+\\. -> \. -> 1 dot
+\\s? -> \s? -> 1 space or not
 
-
-===
+-------------------------------------
 Running:
+-------------------------------------
 1. Download 3 files and save them in same folder in local comupter
 	- BrowserPatterns.json	
 	- UACHs.csv
 	- GetToken.ps1
-2. Copy list of UACH from Unmap sheet to UACH.txt and save
-3. Open Powershell tool.
+2. Copy list of UACH from Unmap sheet to UACHs.csv and save
+3. Open "Window Powershell ISE (x86) tool.
+	- Copy function Get-Matcher in GetToken.ps1 and past to Powershell
 4. Run function Get-Matcher
 5. Show result.
