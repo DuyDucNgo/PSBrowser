@@ -8,7 +8,7 @@
     {
         "name": "Tenta Browser for Android",
         "group": 1,
-        "pattern": "(\"Tenta\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android|Linux; U;)",
+        "pattern": "(\"Tenta\";\\s?v=\"\\d{1,3}[\"\\.]).*(Android|Linux; U;)",
         "negative": "Windows|Macintosh|macOS"
     },
     {
@@ -20,7 +20,7 @@
     {
         "name": "Wave Browser",
         "group": 1,
-        "pattern": "(\"WaveBrowser\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,4})).*(Windows|Macintosh|macOS)",
+        "pattern": "(\"Wave\\s?Browser\";\\s?v=\"\\d{1,3}(\"|[.\\d]{1,3})).*(Windows|Macintosh|macOS)",
         "negative": "Android|iPhone|iPad"
     },
     {
@@ -32,248 +32,272 @@
     {
         "name": "Brave Mobile",
         "group": 1,
-        "pattern": "(\"Brave\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android|iPhone|iPad)",
+        "pattern": "(\"Brave( Browser)?\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android|iPhone|iPad)",
         "negative": "Windows|Macintosh|macOS"
     },
     {
         "name": "TikTok for iOS",
         "group": 2,
         "pattern": "(iPad|iPhone|iPod).*(musical_ly_\\d{1,3}\\.)",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "TikTok for iOS",
         "group": 1,
         "pattern": "(^TikTok \\d{2,3}\\.).*(iPad|iPhone|iPod)",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "TikTok for Android",
         "group": 2,
         "pattern": "(Android).*(musical_ly app_version/\\d{1,3})",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Unknown Mail for iOS",
-        "group": 2,
-        "pattern": "(iPad|iPhone|iPod).*(mailapp/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
-    },
+        "negative": "NegativeRegex"
+    },    
     {
         "name": "115Browser",
         "group": 1,
-        "pattern": "(\\s115Browser/\\d{2}\\.\\d{1,2})",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Google Android Webview",
-        "group": 1,
-        "pattern": "(\"Android\\s?WebView\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative": "GingerClient"
+        "pattern": "(\\s115Browser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Vivaldi",
         "group": 1,
         "pattern": "(Vivaldi/\\d{1,2}\\.\\d{1,2}\\.|\"Vivaldi\";\\s?v=\"\\d{1,2}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Venus Browser",
         "group": 1,
-        "pattern": "(VenusBrowser/\\d{1,2}\\.\\d{1,2}\\.)",
-        "negatives": "GingerClient"
+        "pattern": "(VenusBrowser/\\d{1,2}\\.\\d{1,3})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Citrix Systems",
         "group": 1,
         "pattern": "(WorxWeb/\\d{1,2}\\.\\d{1,2}\\.)",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Publishing GmbH - t-online.de Browser",
         "group": 1,
-        "pattern": "(TO-Browser/TOB\\d{1,2}\\.\\d{3}\\.)",
-        "negative": "GingerClient"
+        "pattern": "(TO-Browser/TOB\\d{1,2}\\.\\d{1,3}\\.)",
+        "negative": "NegativeRegex"
+    },
+	{
+        "name": "Puffin for Android",
+        "group": 2,
+        "pattern": "(Android).*(Puffin/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Linux x86"
     },
     {
         "name": "Puffin for Android (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(Linux x86).*(Puffin/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Linux x86).*(Puffin/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Maxthon",
         "group": 2,
-        "pattern": "(Macintosh|X11; Linux|Windows NT).*(Maxthon/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Macintosh|X11; Linux|Windows NT).*((MXiOS|MxBrowser)/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
+    },
+	{
+        "name": "Maxthon for iOS",
+        "group": 2,
+        "pattern": "(iPad|iPhone|iPod).*((MXiOS|MxBrowser)/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
+    },
+	{
+        "name": "Maxthon for Android",
+        "group": 2,
+        "pattern": "(Android).*((MxBrowser)/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Microsoft Outlook For Mac",
         "group": 1,
         "pattern": "(MacOutlook/\\d{1,3}\\.\\d{1,2}).*(Mac OS X)",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Maxthon for iOS",
+        "negative": "NegativeRegex"
+    }, 
+	{
+        "name": "Microsoft Outlook For iOS",
         "group": 2,
-        "pattern": "(iPad|iPhone|iPod).*(MXiOS/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(Outlook-iOS/).*(\\(\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
+	{
+        "name": "Unknown Mail for iOS",
+        "group": 2,
+        "pattern": "(iPad|iPhone|iPod).*(mailapp/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
+    },	
     {
         "name": "Unknown Mail for Android",
         "group": 2,
         "pattern": "(Android).*(mailapp/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "WhatsApp",
         "group": 1,
         "pattern": "(WhatsApp/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "^YoWhatsApp"
     },
     {
         "name": "Pale Moon",
         "group": 1,
         "pattern": "(PaleMoon/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "AirWatch Browser",
         "group": 1,
-        "pattern": "(AirWatch Browser v\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "((?i)AirWatch Browser v\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yaani Browser for Android",
         "group": 2,
-        "pattern": "(Android).*(YaaniBrowser/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Android).*(YaaniBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Linux x86_64"
     },
     {
         "name": "Yaani Browser for Android (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Linux x86_64).*(YaaniBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yaani Browser for iOS",
         "group": 2,
         "pattern": "(iPhone|Pad).*(YaaniBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Kindle-Silk",
+        "group": 2,
+        "pattern": "(Android).*(Silk/\\d{3}\\.\\d{1,2})",
+        "negative": "Linux x86_64"
+    },
+	{
+        "name": "Kindle-Silk",
         "group": 1,
-        "pattern": "(Silk/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(\"Amazon Silk Browser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Fire OS)",
+        "negative": "Linux x86_64"
+    },
+	{
+        "name": "Kindle-Silk (Mobile in desktop mode)",
+        "group": 2,
+        "pattern": "(Linux x86_64).*(Silk/\\d{3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Seznam For iOS",
         "group": 2,
         "pattern": "(iPhone|iPad).*(SznProhlizec/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Macintosh"
     },
     {
         "name": "Seznam For iOS (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Macintosh).*(SznProhlizec/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "iPhone|iPad"
     },
     {
         "name": "Seznam For Desktop",
         "group": 2,
         "pattern": "(Window).*(SznProhlizec/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Seznam For Android",
         "group": 2,
         "pattern": "(Android).*(SznProhlizec/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Linux x86_64"
     },
     {
         "name": "Seznam For Android (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(X11; Linux x86_64).*(SznProhlizec/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Android"
     },
     {
         "name": "SRWare",
         "group": 2,
-        "pattern": "(Window|Linux x86_64|Macintosh).*(Chrome/\\d{1,3}[.\\d]*).*(Iron Safari/)",
-        "negatives": "GingerClient|Android"
+        "pattern": "(Window|Linux x86_64|Macintosh).*(Chrome/\\d{1,3}\\.\\d{1,2}).*(Iron Safari/)",
+        "negative": "Android"
     },
     {
         "name": "SRWare mobile",
         "group": 2,
-        "pattern": "(Android).*(Chrome/\\d{1,3}[.\\d]*).*(Iron Safari/)",
-        "negatives": "GingerClient|Android"
+        "pattern": "(Android).*(Chrome/\\d{1,3}\\.\\d{1,2}).*(Mobile Iron Safari/)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Instagram for Android",
         "group": 2,
         "pattern": "(Android).*(Instagram \\d{3}\\.)",
-        "negative": "GingerClient"
+        "negative": "iPhone|iPod|iPad"
     },
     {
         "name": "Instagram for iOS",
         "group": 2,
         "pattern": "(iPhone|iPod|iPad).*(Instagram \\d{3}\\.)",
-        "negative": "GingerClient"
+        "negative": "Android"
     },
     {
         "name": "Quark Browser for Android",
         "group": 2,
         "pattern": "(Android).*(Quark/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"		
+        "negative": "NegativeRegex"		
     },
     {
         "name": "Quark Browser for iOS",
         "group": 2,
         "pattern": "(iPhone|iPad|iPod).*(Quark/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Quark Browser for Windows",
         "group": 2,
         "pattern": "(Windows NT).*(Quark/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yandex.Browser for Window",
         "group": 2,
         "pattern": "(Windows NT).*(YaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Android"
     },
     {
         "name": "Yandex.Browser for Window",
         "group": 1,
         "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Windows)",
-        "negative": "GingerClient"
+        "negative": "Linux"
     },
     {
         "name": "Yandex.Browser for Mac OS X",
         "group": 2,
         "pattern": "(Macintosh).*(YaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
             {
         "name": "Yandex.Browser for Mac OS X",
         "group": 1,
-        "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(macOS)",
-        "negative": "GingerClient"
+        "pattern": "(\"Ya(ndex|Browser)\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(macOS)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yandex.Browser for iOS",
         "group": 2,
-        "pattern": "(iPad|iphone|iPhone).*(YaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(iPad|(?i)iPhone).*(YaBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yandex.Browser for iOS",
         "group": 1,
-        "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(iPad|iphone|iPhone|iOS)",
-        "negative": "GingerClient"
+        "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(iPad|(?i)iPhone|iOS)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yandex.Browser for Linux",
@@ -284,445 +308,475 @@
     {
         "name": "Yandex.Browser for Linux",
         "group": 1,
-        "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Linux x86_64)",
+        "pattern": "(\"Ya(ndex|Browser)\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Linux x86_64)",
         "negative": "Android|iOS"
     },
     {
         "name": "Yandex.Browser for Android",
         "group": 2,
         "pattern": "(Android).*(YaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Yandex.Browser for Android",
         "group": 1,
-        "pattern": "(\"YaBrowser\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Coc Coc",
-        "group": 2,
-        "pattern": "(Androi).*(coc_coc_browser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(\"Ya(ndex|Browser)\";\\s?v=\"\\d{2,3}(\"|[.\\d]{2,3})).*(Android)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Coc Coc",
         "group": 1,
-        "pattern": "(\"Coc\\s?Coc\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android|Windows|macOS)",
-        "negative": "GingerClient"
+        "pattern": "(coc_coc_browser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
-        "name": "Unknown Sidekick Browser",
+        "name": "Coc Coc",
+        "group": 1,
+        "pattern": "(\"Coc\\s?Coc\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3}))",
+        "negative": "NegativeRegex"
+    },
+    {
+        "name": "Sidekick Browser",
         "group": 1,
         "pattern": "(\"Sidekick\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Windows|macOS|Linux)",
-        "negative": "GingerClient"
+        "negative": "Android"
     },
     {
         "name": "CCleaner Browser for Windows",
         "group": 2,
         "pattern": "(Windows).*(CCleaner/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "CCleaner Browser for Windows",
         "group": 1,
         "pattern": "(\"CCleaner Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Windows)",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Avast Secure Browser",
         "group": 1,
         "pattern": "(\"Avast Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3}))",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
             {
         "name": "Avast Secure Browser",
         "group": 2,
         "pattern": "(Windows).*(Avast/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "AVG Secure Browser",
         "group": 1,
         "pattern": "(\"AVG Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3}))",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },			
     {
         "name": "Tencent QQ Browser for Android",
         "group": 2,
         "pattern": "(Android).*(MQQBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient|SogouMSE/"
+        "negative": "SogouMSE/"
     },
     {
         "name": "Tencent QQ Browser for iPhone",
         "group": 2,
-        "pattern": "(iPhone).*(MQQBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(iPhone|iOS|iPad).*(MQQBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Tencent QQ Browser for Windows",
         "group": 2,
         "pattern": "(Windows NT).*(QQBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Aloha Browser for Windows",
         "group": 2,
         "pattern": "(Windows NT).*(AlohaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Aloha Browser for Android",
         "group": 2,
         "pattern": "(Android).*(AlohaBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Aloha Browser for iOS",
         "group": 2,
-        "pattern": "(iPhone|iPad|iPod|iOS).*(AlohaBrowser/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(iPhone|iPad|iPod|iOS).*(AlohaBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Aloha Browser for iOS (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(Macintosh).*(AlohaBrowser/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Tencent QQ Browser for Windows",
-        "group": 2,
-        "pattern": "(Windows NT).*(MQQBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Samsung Browser (Mobile in desktop mode)",
-        "group": 2,
-        "pattern": "(Linux x86_64).*(SamsungBrowser/\\d{2}[\\.\\d]+)",
-        "negative": "GingerClient"
-    },
-    {
-        "name": "Samsung Browser (Mobile in desktop mode)",
-        "group": 1,
-        "pattern": "(Samsung Internet\";\\s?v=\"\\d{1,3}\\.\\d{1,2}).*(Linux x86_64)",
-        "negative":"GingerClient|Android|iOS"
-    },
+        "pattern": "(Macintosh).*(AlohaBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
+    },     
     {
         "name": "Samsung Browser",
         "group": 2,
-        "pattern": "(Android|iOS).*(SamsungBrowser/\\d{2}[\\.\\d]+)",
-        "negative": "GingerClient"
+        "pattern": "(Android|iOS).*(SamsungBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Samsung Browser",
         "group": 1,
         "pattern": "(Samsung Internet\";\\s?v=\"\\d{1,3}\\.\\d{1,2}).*(Android|iOS)",
-        "negative":"GingerClient|Linux x86_64"
+        "negative":"Linux x86_64"
+    },
+	{
+        "name": "Samsung Browser (Mobile in desktop mode)",
+        "group": 2,
+        "pattern": "(Linux x86_64).*(SamsungBrowser/\\d{1,3}\\.\\d]+)",
+        "negative": "NegativeRegex"
+    },
+    {
+        "name": "Samsung Browser (Mobile in desktop mode)",
+        "group": 1,
+        "pattern": "(Samsung Internet\";\\s?v=\"\\d{1,3}\\.\\d{1,2}).*(Linux x86_64)",
+        "negative":"Android|iOS"
     },
     {
         "name": "UCBrowser for Mobile (Mobile in desktop mode)",
         "group": 3,
         "pattern": "(Windows|X11;).*(Chrome).*(UCBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "UCBrowser for Android",
-        "group": 3,
-        "pattern": "(Android).*(Chrome).*(UCBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "group": 2,
+        "pattern": "(Android).*(UCBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge (Chromium) for Macintosh",
         "group": 2,
         "pattern": "(Macintosh).*(Edg/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge (Chromium) for Macintosh",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(macOS)",
-        "negative": "GingerClient"
+        "pattern": "(\"(Microsoft )?Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(macOS)",
+        "negative": "NegativeRegex"
     },		
     {
         "name": "Edge (Chromium) for Linux",
         "group": 2,
         "pattern": "(Linux x86_64).*(Edg/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge (Chromium) for Linux",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}\\.\\d{1,3}\").*(Linux)",
-        "negative": "GingerClient"
+        "pattern": "(\"(Microsoft )?Edge\";\\s?v=\"\\d{1,3}\\.\\d{1,3}\").*(Linux)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge (Chromium) for Windows",
         "group": 2,
-        "pattern": "(Windows NT).*(Edg/\\d{3}\\.[\\.\\d]+)",
-        "negative": "GingerClient"
+        "pattern": "(Windows NT).*(Edg/\\d{3}\\.\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge (Chromium) for Windows",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Windows)",
-        "negative": "GingerClient"
+        "pattern": "(\"(Microsoft )?Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Windows)",
+        "negative": "NegativeRegex"
     },	
     {
         "name": "Edge for Android",
         "group": 2,
         "pattern": "(Android).*(EdgA/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge for Android",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative": "GingerClient"
+        "pattern": "(\"(Microsoft )?Edge\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge for Android (WebView mode)",
         "group": 2,
         "pattern": "(Android).*(EdgW/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge for iOS (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Macintosh).*(EdgiOS/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Edge for iOS",
         "group": 2,
-        "pattern": "(iPhone|iPad).*(EdgiOS/1\\d{2}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(iPhone|iPad).*(EdgiOS/1\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },	
     {
         "name": "Edge for iOS",
         "group": 1,
-        "pattern": "(\"Microsoft Edge\";\\s?v=\"\\d{1,3}.*\").*(iOS)",
-        "negative": "GingerClient"
+        "pattern": "(\"(Microsoft )?Edge\";\\s?v=\"\\d{1,3}.*\").*(iOS)",
+        "negative": "NegativeRegex"
     },		
     {
-        "name": "Hi Browser",
+        "name": "Dating Group Hi Browser",
         "group": 1,
-        "pattern": "(HiBrowser/v\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "pattern": "(HiBrowser/v?\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Vivo Browser",
         "group": 1,
         "pattern": "(VivoBrowser/\\d{2,3}\\.)",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "NAVER Corp. Whale",
         "group": 1,
-        "pattern": "(Whale/\\d{1,3}[\\.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Whale/\\d{1,3})",
+        "negative": "Android"
     },
     {
-        "name": "NAVER Corp. Whale UA-CH",
+        "name": "NAVER Corp. Whale",
         "group": 1,
-        "pattern": "(\"Whale\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3}))",
-        "negative": "GingerClient"
+        "pattern": "(\"Whale(\\s?Browser)?\";\\s?v=\"\\d{1,3}[\"\\.])",
+        "negative": "Android"
+    },
+	{
+        "name": "NAVER Corp. Whale mobile",
+        "group": 2,
+        "pattern": "(Android).*(Whale/\\d{1,3})",
+        "negative": "NegativeRegex"
+    },
+    {
+        "name": "NAVER Corp. Whale mobile",
+        "group": 1,
+        "pattern": "(\"Whale(\\s?Browser)?\";\\s?v=\"\\d{1,3}[\"\\.]).*(Android)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "ThunderBird",
         "group": 1,
         "pattern": "(Thunderbird/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "MIUI Browser",
         "group": 1,
         "pattern": "(MiuiBrowser/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Linux x86_64"
+    },
+	{
+        "name": "MIUI Browser (Mobile in desktop mode)",
+        "group": 2,
+        "pattern": "(Linux x86_64).*(MiuiBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },		
     {
         "name": "Opera One",
         "group": 2,
-        "pattern": "(Windows|Linux|Macintosh|macOS).*(OPR/\\d{3}[\\.\\d]+)",
-        "negative": "GingerClient|Android|HbbTV|OPRGX/|Crypto"
+        "pattern": "(Windows|Linux|Macintosh|macOS).*(OPR/\\d{3}\\.\\d{1,2})",
+        "negative": "Android|HbbTV|OPRGX/|Crypto"
     },
     {
         "name": "Opera One",
         "group": 1,
-        "pattern": "(\"Opera\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3})).*(Chromium)?.*(Windows|Linux|macOS|Macintosh)",
-        "negative": "GingerClient|Android|Crypto"
+        "pattern": "(\"Opera\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3})).*(Windows|Linux|macOS|Macintosh)",
+        "negative": "Android|Crypto|Opera GX"
     },
     {
         "name": "Opera GX",
         "group": 1,
-        "pattern": "(\"Opera\\s?GX\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Chromium)?.*(Windows|macOS)",
-        "negative": "GingerClient"
+        "pattern": "(\"Opera\\s?GX\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Windows|macOS)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Opera GX for Android",
         "group": 2,
         "pattern": "(Android).*(OPX/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Linux x86_64"
     },
     {
         "name": "Opera GX for Android (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Linux x86_64).*(OPX/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Opera GX for iOS",
         "group": 2,
         "pattern": "(iPhone|iPad).*(OPX/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Macintosh"
     },
     {
         "name": "Opera GX for iOS (Mobile in desktop mode)",
         "group": 2,
         "pattern": "(Macintosh).*(OPX/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "iPhone|iPad"
     },
     {
         "name": "Opera Crypto Desktop",
-        "group": 2,
-        "pattern": "(Chromium)?.*(\"Opera Crypto\";\\s?v=\"\\d{1,3}(\"|[.\\d]+)).*(Chromium)?",
-        "negative":"GingerClient|OperaMobile|iOS|iPhone|iPad"
+        "group": 1,
+        "pattern": "(\"Opera\\s?Crypto\";\\s?v=\"\\d{1,3}(\"|[.\\d]+)).*(Windows|macOS)?",
+        "negative":"OperaMobile|iOS|iPhone|iPad"
     },
     {
         "name": "Opera Mobile",
         "group": 2,
         "pattern": "(Android).*(OPR/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient|\\sOPT/|; wv\\)"
+        "negative": "\\sOPT/|; wv\\)"
     },
     {
         "name": "Opera Mobile",
         "group": 1,
         "pattern": "(\"OperaMobile\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative": "GingerClient|\\sOPT/|; wv\\)"
+        "negative": "\\sOPT/|\\sOPX|; wv\\)"
     },
     {
         "name": "Opera Touch for Android",
         "group": 2,
-        "pattern": "(Android).*(OPT/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Android).*(\\sOPT/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Linux x86_64"
     },
     {
         "name": "Opera Touch for Android (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(X11; Linux x86_64).*(OPT/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(X11; Linux x86_64).*(OPT/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Opera Touch for iOS",
         "group": 2,
         "pattern": "(iPhone|iPad|iPod|iOS).*(OPT/\\d{1,3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
     },
     {
         "name": "Opera Touch for iOS (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(Macintosh).*(OPT/\\d{1,3}[.\\d]*)",
-        "negative": "GingerClient"
+        "pattern": "(Macintosh).*(OPT/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Opera Mini",
         "group": 3,
         "pattern": "(Android).*(; wv\\)).*(OPR/[89][.\\d]{2,3})",
-        "negative": "GingerClient"
+        "negative": "NegativeRegex"
+    },
+	{
+        "name": "Opera Mini",
+        "group": 1,
+        "pattern": "(Opera Mini/\\d{1,3}\\.\\d{1,2}).*(Presto)",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Waterfox",
-        "group": 2,
-        "pattern": "(Windows NT).*(Waterfox/\\d{2,4}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "group": 1,
+        "pattern": "(Waterfox/\\d{2,4}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
     },
     {
         "name": "Firefox",
-        "group": 2,
-        "pattern": "(Windows NT).*(Firefox/\\d{3}\\.\\d{1,2})",
-        "negative":"GingerClient|Waterfox"
+        "group": 1,
+        "pattern": "(Firefox/\\d{3}\\.\\d{1,2})",
+        "negative":"Android|iOS|Opera GX|Thunderbird|PaleMoon|Waterfox"
+    },
+	{
+        "name": "Firefox",
+        "group": 1,
+        "pattern": "(\"Firefox\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3}))",
+        "negative": "Android|iOS|Opera GX|Thunderbird|PaleMoon|Waterfox"
     },
     {
         "name": "Firefox for Mobile",
         "group": 2,
         "pattern": "(Android).*(Firefox/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Linux x86_64|Opera GX|Thunderbird|PaleMoon"
     },
     {
         "name": "Firefox for iOS",
         "group": 2,
         "pattern": "(iPhone|iPad|iPod).*(FxiOS/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
+        "negative": "Opera GX|Thunderbird|PaleMoon"
     },
     {
         "name": "Firefox for iOS (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(Macintosh).*(FxiOS/\\d{3}\\.\\d{1,2})",
-        "negative": "GingerClient"
-    },
+        "pattern": "(Macintosh).*(FxiOS/\\d{3}(\\s|\\.\\d{1,2}))",
+        "negative": "Opera GX|Thunderbird|PaleMoon"
+    },      
     {
-        "name": "Chrome for iOS",
+        "name": "GoogleMobile for iOS",
         "group": 2,
-        "pattern": "(iPhone|iPad).*(CriOS/1\\d{2}\\.\\d{1,2})",
-        "negative": "GingerClient|Macintosh|Windows"
+        "pattern": "(iPhone|iPad|iPod).*(GSA/\\d{3}\\.)",
+		"negative":"NegativeRegex"
     },
     {
-        "name": "Chrome for iOS (Mobile in desktop mode)",
+        "name": "GoogleMobile for iOS",
+        "group": 1,
+        "pattern": "(\"Google Search Application\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(iPadOS|iOS)",
+		"negative":"NegativeRegex"
+    },
+	{
+        "name": "GoogleMobile for iOS",
+        "group": 1,
+        "pattern": "(GoogleMobile/\\d{3}\\.).*(iPhone|iPad)",
+		"negative":"NegativeRegex"
+    },
+    {
+        "name": "Chrome",
         "group": 2,
-        "pattern": "(Macintosh).*(CriOS/1\\d{2}(\\.\\d{1,2})?)",
-        "negative": "GingerClient|Windows"
-    },
+        "pattern": "(Windows|Linux|Macintosh).*(Chrome/1\\d{1,3}[\\.0]{3})",
+		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|Android"
+	},
     {
+        "name": "Chrome",
+        "group": 1,
+        "pattern": "(\"Google\\s?Chrome\";\\s?v\\s?=\\s?\"1\\d{1,3}(\"|[.\\d]{1,3})).*(Windows|Linux|macOS)",
+		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|Android" 
+    },
+	{
         "name": "Chrome Mobile",
         "group": 2,
-        "pattern": "(Android).*(Chrome/1\\d{2}[\\.0]{6}) Mobile",
-        "negative":"Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
+        "pattern": "(Android).*(Chrome/1\\d{1,3}[\\.0]{6}) Mobile",
+		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser"       
     },
     {
         "name": "Chrome Mobile",
         "group": 1,
         "pattern": "(\"Google Chrome\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3})).*(Android)",
-        "negative":"Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
-    },		
-    {
-        "name": "GoogleMobile for iOS",
+        "negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser" 
+    },
+	{
+        "name": "Chrome for iOS",
         "group": 2,
-        "pattern": "(iPhone|iPad|iPod).*(GSA/\\d{3}\\.)",
-        "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
+        "pattern": "(iPhone|iPad).*(CriOS/1\\d{1,3}\\.\\d{1,2})",
+        "negative": "Macintosh|Windows"
     },
     {
-        "name": "GoogleMobile for iOS",
-        "group": 1,
-        "pattern": "(GoogleMobile/\\d{3}\\.).*(iPhone|iPad)",
-        "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
-    },
-    {
-        "name": "Chrome",
+        "name": "Chrome for iOS (Mobile in desktop mode)",
         "group": 2,
-        "pattern": "(Windows|Linux|Macintosh).*(Chrome/1\\d{2}[\\.0]{3})",
-        "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
-    },
-    {
-        "name": "Chrome",
-        "group": 1,
-        "pattern": "(\"Google\\s?Chrome\";\\s?v\\s?=\\s?\"1\\d{2}(\"|[.\\d]{1,3})).*(Windows|Linux|macOS)",
-        "negative":"Android|Silk/|Instagram|Quark/|YaBrowser/|coc_coc_browser/|MQQBrowser/|AlohaBrowser/|QQBrowser/|SamsungBrowser/|UCBrowser/|Edge|EdgA/|EdgW/|EdgiOS/|HiBrowser/|VivoBrowser/|Whale/|Thunderbird/|MiuiBrowser/|OPR/|OPX/|Opera Mini/|CCleaner|Avast Secure Browser|Avast/|Firefox|CriOS/|Maxthon|WorxWeb"
-    },
+        "pattern": "(Macintosh).*(CriOS/1\\d{1,3}(\\.\\d{1,2})?)",
+        "negative": "Windows"
+    },  	
     {
         "name": "Safari",
         "group": 2,
         "pattern": "(Mac OS X).*(Version/1[6-8][\\._\\d]{1,2} Safari/|Version/1[78][.\\d]+ Mobile/)",
-        "negative": "Android"
+        "negative": "AirWatch|Opera|SznProhlizec|TikTok|Whale|WorxWeb|musical_ly|OP(R|X|T)/|(Aloha|MQQ)Browser"
     },
     {
         "name": "Mobile Safari",
         "group": 2,
         "pattern": "(iPhone|iPad|iPod).*(Version/1[6-8][\\._\\d]+)",
-        "negative": "Android"
+        "negative": "AirWatch|Opera|SznProhlizec|TikTok|Whale|WorxWeb|musical_ly|OP(R|X|T)/|(Aloha|MQQ)Browser"
     },
     {
-        "name": "Unknown Crawlwer Autotool / 79609",
+        "name": "Google Android Webview",
         "group": 1,
-        "pattern": "(Crawlwer|crawler|http)",
-        "negative": "Negative"
+        "pattern": "(\"Android\\s?WebView\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android)",
+        "negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser"
     }
 ]

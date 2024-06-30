@@ -35,11 +35,12 @@ function Get-Matcher {
     # Loop through user agents and match against patterns
     foreach ($ua in $UAs) {
       foreach ($node in $hash) {
-        if ($ua -match $node.pattern) {
+        if (($ua -match $node.pattern) -and ($ua -notmatch $node.negative)) {
           $result[$node.name] += $Matches[$node.group]
         }
       }
     }
+    Clear-Host
     Write-Host "- - - - - - Output - - - - - -"
     # Output results
     $keysSorted = $result.Keys | Sort-Object
