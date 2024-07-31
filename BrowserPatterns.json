@@ -500,7 +500,7 @@
     {
         "name": "Edge (Chromium) for Windows",
         "group": 2,
-        "pattern": "(Windows NT).*(Edg/\\d{3}\\.\\.\\d{1,2})",
+        "pattern": "(Windows NT).*(Edg/\\d{3}\\.\\d{1,2})",
         "negative": "NegativeRegex"
     },
     {
