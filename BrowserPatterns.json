@@ -1,5 +1,29 @@
 [
+	{
+        "name": "Linden Research Second Life Browser",
+        "group": 1,
+        "pattern": "(SecondLife/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Negative"
+    },
+	{
+        "name": "Automattic, Inc WordPress",
+        "group": 1,
+        "pattern": "(WordPress/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Negative"
+    },	
+	{
+        "name": "Twitter for iOS",
+        "group": 1,
+        "pattern": "(^Twitter/\\d{1,3}(\\.\\d{1,2})?).*(CFNetwork/).*(Darwin/)",
+        "negative": "Negative"
+    },
     {
+        "name": "Meizu mz browser",
+        "group": 2,
+        "pattern": "(Android).*(MZBrowser/\\d{1,3}\\.\\d{1,2})",
+        "negative": "Negative"
+    },
+	{
         "name": "Huawei Browser",
         "group": 2,
         "pattern": "(Android|HarmonyOS).*(HuaweiBrowser/\\d{1,3}\\.)",
@@ -74,7 +98,7 @@
     {
         "name": "Vivaldi",
         "group": 1,
-        "pattern": "(Vivaldi/\\d{1,2}\\.\\d{1,2}\\.|\"Vivaldi\";\\s?v=\"\\d{1,2}\\.\\d{1,2})",
+        "pattern": "(Vivaldi/\\d{1,2}\\.\\d{1,2}|\"Vivaldi\";\\s?v=\"\\d{1,2}\\.\\d{1,2})",
         "negative": "NegativeRegex"
     },
     {
@@ -383,7 +407,7 @@
         "pattern": "(\"Avast Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{1,3}))",
         "negative": "NegativeRegex"
     },
-            {
+    {
         "name": "Avast Secure Browser",
         "group": 2,
         "pattern": "(Windows).*(Avast/\\d{3}\\.\\d{1,2})",
@@ -392,9 +416,15 @@
     {
         "name": "AVG Secure Browser",
         "group": 1,
-        "pattern": "(\"AVG Secure Browser\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3}))",
+        "pattern": "(\"AVG Secure Browser\";\\s?v=\"\\d{1,3}(\"|[.\\d]{2,3}))",
         "negative": "NegativeRegex"
-    },			
+    },
+	{
+        "name": "AVG Secure Browser",
+        "group": 2,
+        "pattern": "(Windows|Macintosh).*(AVG/\\d{1,3}\\.\\d{1,2})",
+        "negative": "NegativeRegex"
+    },	
     {
         "name": "Tencent QQ Browser for Android",
         "group": 2,
@@ -592,7 +622,7 @@
         "group": 1,
         "pattern": "(MiuiBrowser/\\d{1,3}\\.\\d{1,2})",
         "negative": "Linux x86_64"
-    },
+    },	
 	{
         "name": "MIUI Browser",
         "group": 2,
@@ -728,7 +758,7 @@
     {
         "name": "Firefox for iOS",
         "group": 2,
-        "pattern": "(iPhone|iPad|iPod).*(FxiOS/\\d{3}\\.\\d{1,2})",
+        "pattern": "(iPhone|iPad|iPod).*(FxiOS/\\d{3}(\\.\\d{1,2}|\\s))",
         "negative": "Opera GX|Thunderbird|PaleMoon"
     },
     {
@@ -768,11 +798,17 @@
 		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)?/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|Android" 
     },
 	{
-        "name": "Chrome Mobile",
+        "name": "Chrome Mobile is WebApp False",
         "group": 2,
-        "pattern": "(Android).*(Chrome/1\\d{1,3}[\\.0]{6}) Mobile",
-		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_|Huawei)Browser|YandexSearch"       
+        "pattern": "(Android).*(Chrome/1\\d{1,3}[\\.0]{1,3})",
+		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_|Huawei)Browser|YandexSearch|; wv\\)"
     },
+	{
+        "name": "Chrome Mobile is WebApp True",
+        "group": 2,
+        "pattern": "(Android).*; wv\\).*(Chrome/1\\d{1,3}[\\.0]{1,3})",
+		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_|Huawei)Browser|YandexSearch"       
+    },	
     {
         "name": "Chrome Mobile",
         "group": 1,
@@ -808,5 +844,5 @@
         "group": 1,
         "pattern": "(\"Android\\s?WebView\";\\s?v=\"\\d{3}(\"|[.\\d]{2,3})).*(Android)\"?$",
         "negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|YandexSearch|HuaweiBrowser"
-    }
+    }	
 ]
