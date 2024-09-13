@@ -794,14 +794,14 @@
         "name": "Chrome",
         "group": 1,
         "pattern": "(\"Google\\s?Chrome\";\\s?v\\s?=\\s?\"1[23]\\d(\"|[.\\d]{1,2})).*(Windows|Linux|macOS)",
-		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)?/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|Android" 
+		"negative": "Android|iOS|iPhone|iPadOS|iPad|Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)?/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser" 
     },
     {
         "name": "Chrome",
         "group": 2,
         "pattern": "(Windows|Linux|Macintosh).*(Chrome/1[23]\\d\\.[\\.0]{5})",
-		"negative": "Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)?/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser|Android"
-	},    
+		"negative": "Android|iOS|iPhone|iPadOS|iPad|Avast|Brave|CCleaner|CriOS/|Edg(A|W|e|iOS)?/|Firefox|Instagram|MXiOS|OP(R|X|T)/|Opera|Quark/|Silk/|SznProhlizec|Thunderbird/|TikTok|Vivaldi|Whale/|WorxWeb|Wavebox|musical_ly|(115|Hi|Aloha|QQ|Miui|Mx|Samsung|UC|Venus|Vivo|Wave|Ya|coc_coc_)Browser"
+	},	
 	{
         "name": "Chrome Mobile (isWebApp False)",
         "group": 2,
