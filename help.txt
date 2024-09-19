@@ -16,7 +16,7 @@ Running:
 	- UACHs.csv
 	- GetToken.ps1
 2. Copy list of UACH from Unmap sheet to UACHs.csv and save
-3. Open "Window Powershell ISE (x86) tool.
+3. Open "Windows Powershell ISE (x86) tool.
 	- Copy function Get-Matcher in GetToken.ps1 and past to Powershell
 4. Run function Get-Matcher
 5. Show result.
