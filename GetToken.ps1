@@ -31,7 +31,8 @@ function Get-Matcher {
     foreach ($node in $hash) {
       $result[$node.name] = @()
     }
-    
+	# Waiting message
+    Write-Host "Running matcher, please wait!"
     # Loop through user agents and match against patterns
     foreach ($ua in $UAs) {
       foreach ($node in $hash) {
@@ -53,4 +54,6 @@ function Get-Matcher {
       }
     }
   }
-  Get-Matcher
+  Clear-Host
+  Write-Host "Browser: `tGet-Matcher -RegexFile BrowserPatterns.json"
+  Write-Host "Software: `tGet-Matcher -RegexFile SoftwarePatterns.json"

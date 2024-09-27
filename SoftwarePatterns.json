@@ -1,0 +1,350 @@
+[    
+		{
+            "name": "Apple iOS Testing UA",
+            "group": 1,
+            "pattern": "((^iOS |^IOS |\\(iOS |CPU OS |iOS/|[;:] (?i)iOS |iPhone; iOS|CPU iPhone |iPhone; CPU |iPhone [A-Z]* OS |iPhone\\s?OS\\s?|iPhone/|\\(ios/| iOS |[a-z]{2}_[A-Z]{2}; )\\d{2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(;|;\\s?iPhone|;?\\s?like| unknown| Gravity| \\(||\\)| iPhone| hw/|;\\s?Scale/|\\)$|\\)|$| -| wv))",
+			"negative": "iPad|Windows|Macintosh|Android"	
+        },
+		{
+            "name": "Apple iOS Testing UA majo",
+            "group": 1,
+            "pattern": "((CPU iPhone OS \\d{2} like))",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS 1",
+            "group": 1,
+            "pattern": "(; iOS SDK \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?).*(iPhone)",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iPadOS 1",
+            "group": 1,
+            "pattern": "(; iOS SDK \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?).*(iPad)",
+			"negative": "iPhone|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iPadOS 1",
+            "group": 1,
+            "pattern": "(\\(iPad; CPU OS( OS)? \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 2",
+            "group": 1,
+            "pattern": "(\\(iPad; U; CPU OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 3",
+            "group": 1,
+            "pattern": "(\\(iPad; CPU iPad OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 4",
+            "group": 1,
+            "pattern": "(\\(iPad; CPU iPhone OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 5",
+            "group": 1,
+            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Apple)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 5a",
+            "group": 2,
+            "pattern": "(iPad\\d{1,2},\\d{1,2})(; iPadOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 6",
+            "group": 1,
+            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\)$)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 6m",
+            "group": 1,
+            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Mobile)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 7",
+            "group": 1,
+            "pattern": "(\\(iOS(; iPadOS)? \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(; iPad|; Unity))",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 8",
+            "group": 1,
+            "pattern": "(\\(iPad; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(\\)$|; iPad|; Scale))",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 9",
+            "group": 1,
+            "pattern": "(\\(iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;\\s?iPad)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 10",
+            "group": 1,
+            "pattern": "(\\(iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;) [a-z]{2}_[A-Z]{2}",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 10a",
+            "group": 1,
+            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;) [a-z]{2}_[A-Z]{2}",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 11",
+            "group": 1,
+            "pattern": "(\\(iPad; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?; (Scale|\\)))",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 12",
+            "group": 1,
+            "pattern": "(\\(iPad; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)( [a-z]{2}_[A-Z]{2})",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 13",
+            "group": 2,
+            "pattern": "(\\(iPad\\d{1,2},\\d{1,2})((; U)?; CPU (OS|iPadOS) \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"
+        },
+		{
+            "name": "Apple iPadOS 14",
+            "group": 1,
+            "pattern": "(iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?( iPad/|; Tablet))",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 15",
+            "group": 1,
+            "pattern": "(\\(iPhone; U; CPU iPad OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 16",
+            "group": 1,
+            "pattern": "(\\(iPad; CPU iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 17",
+            "group": 1,
+            "pattern": "(iPadOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?( \\(|\\)$| unknown| Max/))",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 18",
+            "group": 2,
+            "pattern": "(model/iPad\\d{1,2},\\d{1,2} )(iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 19",
+            "group": 1,
+            "pattern": "(\\(iPad; U; CPU iPhone OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 20 more spaces",
+            "group": 1,
+            "pattern": "(\\siPad\\s+CPU OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 21",
+            "group": 1,
+            "pattern": "(\\(iPad; CPU iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 22",
+            "group": 1,
+            "pattern": "(^iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? \\(iPad)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS 23",
+            "group": 1,
+            "pattern": "(; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Apple/iPad)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS UACH 1",
+            "group": 1,
+            "pattern": "(^iPadOS\\x1f\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+			"negative": "Windows"			
+        },
+		{
+            "name": "Apple iPadOS UACH 2",
+            "group": 1,
+            "pattern": "(\"iPadOS\"\\x1f\"\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\"$)",
+			"negative": "Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "LG webOS",
+            "group": 1,
+            "pattern": "(; WEBOS\\d{2}[\\s;]|WEBOS\\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Ubuntu Foundation Ubuntu",
+            "group": 1,
+            "pattern": "(Ubuntu \\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Ubuntu Foundation Ubuntu",
+            "group": 1,
+            "pattern": "(Ubuntu/\\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "KaiOS Technologies KaiOS",
+            "group": 1,
+            "pattern": "(KAIOS/\\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Amazon Fire OS",
+            "group": 1,
+            "pattern": "(Fire OS \\d{1,2}\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Google Android",
+            "group": 1,
+            "pattern": "(Android 1\\d\\.\\d{1,2}(\\.\\d{1,2})?)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Google Android 13",
+            "group": 1,
+            "pattern": "(Android%2014%3B%20)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Google Android 14",
+            "group": 1,
+            "pattern": "(Android%2014%3B%20)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Google Android 15",
+            "group": 1,
+            "pattern": "(Android%2015%3B%20)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Google Android 1[6-9]",
+            "group": 1,
+            "pattern": "(Android%201\\d[6-9]%3B%20)",
+			"negative": "iPhone|iPad|Windows|Macintosh|macOS"			
+        },		
+		{
+            "name": "Apple iOS unknown",
+            "group": 1,
+            "pattern": "(\\(ipod.*os \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;? like)",
+			"negative": "iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "Apple iOS unknown",
+            "group": 1,
+            "pattern": "(\\(iphone.*os \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;? like)",
+			"negative": "iPad|Windows|Macintosh|macOS"			
+        },
+		{
+            "name": "WatchOS",
+            "group": 1,
+            "pattern": "(watchOS/\\d{1,3}\\.\\d{1,3}(\\.\\d{1,3})? model/)",
+			"negative": "AddingNegativeRegex"			
+        },
+		{
+            "name": "ChromeOS",
+            "group": 2,
+            "pattern": "(X11; CrOS).*(Chrome/\\d{1,3}\\.\\d{1,3})",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "macOS",
+            "group": 1,
+            "pattern": "(macOS/\\d{1,3}\\.\\d{1,3})",
+			"negative": "AddingNegativeRegex"			
+        },
+		{
+            "name": "Apple Macintosh",
+            "group": 1,
+            "pattern": "(Macintosh; Intel Mac OS X \\d{1,2}_\\d{1,2}_\\d{1,2};)",
+			"negative": "AddingNegativeRegex"			
+        },
+		{
+            "name": "Apple Darwin",
+            "group": 1,
+            "pattern": "(Darwin/\\d{1,2}\\.\\d{1,2})",
+			"negative": "CFNetwork"			
+        },
+		{
+            "name": "Apple TV Software",
+            "group": 1,
+            "pattern": "(Apple TV.*OS \\d{1,2}[\\._][\\d\\._]+ like)",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Apple TV Software",
+            "group": 1,
+            "pattern": "(AppleTV[\\d,]+: tvOS/\\d{1,2}[\\.\\d]+) \\(",
+			"negative": "AddingNegativeRegex"			
+        },		
+		{
+            "name": "Sony PS4 Software",
+            "group": 1,
+            "pattern": "(PlayStation 4[/\\s]\\d{1,3}\\.\\d{1,3}[\\);])",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Sony PS4 Software",
+            "group": 1,
+            "pattern": "(/\\d{1,3}\\.\\d{1,3} \\(PlayStation 4\\))",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Sony PS5 Software",
+            "group": 1,
+            "pattern": "(PlayStation 5[/\\s]\\d{1,3}\\.\\d{1,3}[\\);])",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Sony PS5 Software",
+            "group": 1,
+            "pattern": "(/\\d{1,3}\\.\\d{1,3} \\(PlayStation 5\\))",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Sony PSx Software",
+            "group": 1,
+            "pattern": "(PlayStation \\d[6-9][/\\s]\\d{1,3}\\.\\d{1,3}\\))",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Sony PSx Software",
+            "group": 1,
+            "pattern": "(/\\d{1,3}\\.\\d{1,3} \\(PlayStation \\d[6-]\\))",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "Tizen Association",
+            "group": 1,
+            "pattern": "(Tizen.*\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?)",
+			"negative": "AddingNegativeRegex"			
+        }
+]
