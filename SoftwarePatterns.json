@@ -19,7 +19,7 @@
 			"negative": "Windows"			
         },		
 		{
-            "name": "Apple iPadOS CH",
+            "name": "Apple iPadOS UA",
             "group": 1,
             "pattern": "((\\(iPad|iPad; iPhone OS|iPad\\s?OS|iPad; iOS|iPad; U; CPU OS|iPad; (U; )?CPU (iPad|iPhone|OS) i?OS|iPad; (U; )?CPU i?OS|iPad\\s+CPU\\s+OS|iPad\\d{1,2},\\d{1,2}; U; CPU OS|iPad\\d{1,2},\\d{1,2} iOS|iPad\\d{1,2},\\d{1,2}; CPU( iPhone)? OS)[/\\s]\\d{2}([\\._\\d]+)?)(;|\\s|\\)|$)",
 			"negative": "Windows|Macintosh|Android|macOS"	
