@@ -387,6 +387,12 @@
 		{
             "name": "Apple iPadOS ua-pt27",
             "group": 2,
+            "pattern": "(iPad).*(; iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)",
+			"negative": "Windows|Macintosh|Android"
+        },
+		{
+            "name": "Apple iPadOS ua-pt28",
+            "group": 2,
             "pattern": "(MIA/).*(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? - tablet$)",
 			"negative": "Windows|Macintosh|Android"
         },
@@ -469,9 +475,15 @@
 			"negative": "AddingNegativeRegex"			
         },
 		{
-            "name": "ChromeOS",
+            "name": "ChromeOS UA",
             "group": 2,
-            "pattern": "(X11; CrOS).*(Chrome/\\d{1,3}\\.\\d{1,3})",
+            "pattern": "(X11; CrOS.*)(\\d{5}\\.).*(Chrome/\\d{1,3}\\.\\d{1,3})",
+			"negative": "AddingNegativeRegex"
+        },
+		{
+            "name": "ChromeOS CH",
+            "group": 2,
+            "pattern": "(.*Chrome\\s?OS.*)(\\d{5}\\.).*",
 			"negative": "AddingNegativeRegex"
         },
 		{
