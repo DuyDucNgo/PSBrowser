@@ -1,332 +1,374 @@
 [    
 		{
-            "name": "Apple iOS ua-pt00",
+            "name": "Apple iOS",
             "group": 1,
             "pattern": "(CPU iPhone OS \\d{2} like)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS SDK ua-pt00",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(; iOS SDK \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\); iPhone)",
+            "pattern": "(\\(iPhone; CPU iPhone OS \\d{2}[\\d\\.+]*\\))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt01",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(CPU iPhone( OS)? \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(; iOS SDK \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\); iPhone)",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 1,
+            "pattern": "((?i)CPU iPhone( OS)? \\d{2}[\\._]\\d{1,2}([\\._\\d]{2,3})? like)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },		
 		{
-            "name": "Apple iOS ua-pt03",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(\\)|;| like))",
+            "pattern": "(\\(iPhone;( iPhone)? i?OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?(\\)|;| like))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt04",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone[\\s,\\dU;]+CPU i?OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPhone[\\s,\\dU;]+CPU i?OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt05",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\( CPU iPhone OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\( CPU iPhone OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt06",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(iPhone\\s+CPU\\s+iPhone\\s+OS\\s+\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\s+like)",
+            "pattern": "(iPhone\\s+CPU\\s+iPhone\\s+OS\\s+\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\s+like)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt07",
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(iPhone\\d{1,2},\\d{1,2} )(iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? unknown)",
+            "pattern": "(iPhone\\d+,\\d+ )(iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? unknown)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt08",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(iPhone; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? [a-z]{2}[-_][A-Z]{2}\\))",
+            "pattern": "(iPhone; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? [a-z]{2}[-_][A-Z]{2}\\))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt08",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\))",
+            "pattern": "(\\(iPhone iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt09",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(^iPhone iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? Max/)",
+            "pattern": "(^iPhone iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? Max/)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt10",
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(iPhone\\d{1,2},\\d{1,2}) (iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? CFNetwork/)",
+            "pattern": "(iPhone\\d+,\\d+) (iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? CFNetwork/)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt11",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone; iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?; CFNetwork/)",
+            "pattern": "(\\(iPhone; iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?; CFNetwork/)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt12",
+            "name": "Apple iOS",
+            "group": 3,
+            "pattern": "(^Instagram |^pp-ios-sdk/)[\\d\\.]+ (\\(iPhone\\d+,\\d+)(; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;)",
+			"negative": "iPad|Windows|Macintosh|Android|\\sInstagram [\\d\\.]+ \\(iPhone"			
+        },
+		{
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(\\(iPhone\\d{1,2},\\d{1,2})(; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)",
+            "pattern": "(; iPhone \\d+,\\d+)(; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt13",
-            "group": 2,
-            "pattern": "(; iPhone \\d{1,2},\\d{1,2})(; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)",
-			"negative": "iPad|Windows|Macintosh|Android"			
-        },
-		{
-            "name": "Apple iOS ua-pt14",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(iPhone\\d{1,2},\\d{1,2} iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? unknown)",
+            "pattern": "(iPhone\\d+,\\d+ iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? unknown)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt15",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "( iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? iPhone/)",
+            "pattern": "( iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? iPhone/)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt16",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? \\()",
+            "pattern": "(; iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?; Model iPhone)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt17",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;\\s?i?Phone)",
+            "pattern": "(\\(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;\\s?i?Phone)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt18",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(; iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?( wv\\)|; iPhone))",
+            "pattern": "(; iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?( wv\\)|; iPhone))",
 			"negative": "iPad|Windows|Macintosh|Android"
         },
 		{
-            "name": "Apple iOS ua-pt19",
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(MIA/).*(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? - mobile$)",
+            "pattern": "(MIA/).*(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? - mobile$)",
 			"negative": "iPad|Windows|Macintosh|Android"
         },
 		{
-            "name": "Apple iOS ua-pt20",
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(TVMusic/).*(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? AppleTV/)",
+            "pattern": "(TVMusic/).*(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? AppleTV/)",
 			"negative": "iPad|Windows|Macintosh|Android"
         },
 		{
-            "name": "Apple iOS ua-pt21",
+            "name": "Apple iOS",
             "group": 2,
-            "pattern": "(\\(Apple iPhone).*(; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\))",
+            "pattern": "(\\(Apple iPhone).*(; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt22",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "((?i)\\(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\)$)",
+            "pattern": "((?i)\\(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\)$)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt23",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "((?i) iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+            "pattern": "((?i) iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?$)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt24",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)( [a-z]{2}_[A-Z]{2}; iPhone)",
+            "pattern": "(\\(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;)( [a-z]{2}_[A-Z]{2}; iPhone)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt25",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone/\\d+ iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\)$)",
+            "pattern": "(\\(iPhone/\\d+ iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\)$)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt26",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "( iPhone/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? hw/iPhone)",
+            "pattern": "( iPhone/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? hw/iPhone)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt27",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(\\(iPhone/.*\\d{1,2}([\\._]\\d{1,2})?\\))",
+            "pattern": "(\\(iPhone/.*\\d{2}([\\._]\\d{2,3})?\\))",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iOS ua-pt28",
+            "name": "Apple iOS",
             "group": 1,
-            "pattern": "(; iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(\\)| Apple/iPhone| Alamofire/|;; iPhone|; [\\d\\.]+; iPhone))",
+            "pattern": "(; iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?(\\)| Apple/iPhone| Alamofire/|;; iPhone|; [\\d\\.]+; iPhone))",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 2,
+            "pattern": "(^theScore/|^Spotify/|^iPhone|^Apple iPhone|^ANVSDKv).*((?i)iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? (\\(iPhone|\\(Philo|Viki/|HISTORY/|Lifetime|like Mac))",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 1,
+            "pattern": "(^iOS/\\d{2}([\\._]\\d{2,3})?.*(dataaccessd/|accountsd/))",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 2,
+            "pattern": "(iPhone\\d+,\\d+)(\\|\\d{2}[\\._\\d]*\\|)",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 1,
+            "pattern": "(^iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? \\(iPhone).*/ Rai24",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 1,
+            "pattern": "(iPhone \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? \\(iPhone)\\d+,\\d+\\)$",
+			"negative": "iPad|Windows|Macintosh|Android"			
+        },
+		{
+            "name": "Apple iOS",
+            "group": 1,
+            "pattern": "(\\(iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;[a-z]{2}_[A-Z]{2};iPhone)",
 			"negative": "iPad|Windows|Macintosh|Android"			
         },
 		{
             "name": "Apple iOS CH",
             "group": 1,
-            "pattern": "(\"?iOS\"?\\x1f\"?\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\"?$)",
+            "pattern": "(\"?iOS\"?\\x1f\"?\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\"?$)",
 			"negative": "Windows|Macintosh|macOS"			
         },		
 		{
-            "name": "Apple iPadOS SDK ua-pt00",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; iOS SDK \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\); iPad)",
+            "pattern": "(; iOS SDK \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\); iPad)",
 			"negative": "iPhone|Windows|Macintosh|Android"			
         },
 		{
-            "name": "Apple iPadOS ua-pt01",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; CPU( OS| iPad| iPhone)? OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPad; CPU( OS| iPad| iPhone)? OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt02",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; U; CPU OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPad; U; CPU OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt03",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Apple)",
+            "pattern": "(; iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\) Apple)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt04",
+            "name": "Apple iPadOS",
             "group": 2,
-            "pattern": "(iPad\\d{1,2},\\d{1,2})(; iPadOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+            "pattern": "(iPad\\d+,\\d+)(; iPadOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?$)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt05",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\)$)",
+            "pattern": "(; iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\)$)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt06",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Mobile)",
+            "pattern": "(; iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\) Mobile)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt07",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iOS(; iPadOS)? \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(; iPad|; Unity))",
+            "pattern": "(\\(iOS(; iPadOS)? \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?(; iPad|; Unity))",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt08",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?(\\)$|; iPad|; Scale))",
+            "pattern": "(\\(iPad; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?(\\)$|; iPad|; Scale))",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt09",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "((\\(|; )iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)",
-			"negative": "Windows"			
+            "pattern": "((\\(|; )iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;)",
+			"negative": "Windows|\\sInstagram [\\d\\.]+ \\(iPad"
         },
 		{
-            "name": "Apple iPadOS ua-pt10",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?;)( [a-z]{2}_[A-Z]{2})",
+            "pattern": "(\\(iPad; iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?;)( [a-z]{2}_[A-Z]{2})",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt11",
+            "name": "Apple iPadOS",
             "group": 2,
-            "pattern": "(\\(iPad\\d{1,2},\\d{1,2})((; U)?; CPU (OS|iPadOS) \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPad\\d+,\\d+)((; U)?; CPU (OS|iPadOS) \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"
         },
 		{
-            "name": "Apple iPadOS ua-pt12",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?( iPad/|; Tablet))",
+            "pattern": "(iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?( iPad/|; Tablet))",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt13",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPhone; U; CPU iPad OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPhone; U; CPU iPad OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt14",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; CPU iPadOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(; CPU iPadOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt15",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(iPadOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?( \\(|\\)$| unknown| Max/))",
+            "pattern": "(iPadOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?( \\(|\\)$| unknown| Max/))",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt16",
+            "name": "Apple iPadOS",
             "group": 2,
-            "pattern": "(model/iPad\\d{1,2},\\d{1,2} )(iOS/\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?$)",
+            "pattern": "(model/iPad\\d+,\\d+ )(iOS/\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?$)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt17",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; U; CPU (iPhone|iPad) OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPad; U; CPU (iPhone|iPad) OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt18",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\siPad\\s+CPU OS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\siPad\\s+CPU OS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt19",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(\\(iPad; CPU iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? like)",
+            "pattern": "(\\(iPad; CPU iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? like)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt20",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(^iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? \\(iPad)",
+            "pattern": "(^iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? \\(iPad)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt21",
+            "name": "Apple iPadOS",
             "group": 1,
-            "pattern": "(; iOS \\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\\) Apple/iPad)",
+            "pattern": "(; iOS \\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\\) Apple/iPad)",
 			"negative": "Windows"			
         },
 		{
-            "name": "Apple iPadOS ua-pt22",
+            "name": "Apple iPadOS",
             "group": 2,
-            "pattern": "(MIA/).*(iOS[/\\s]\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})? - tablet$)",
+            "pattern": "(MIA/).*(iOS[/\\s]\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})? - tablet$)",
 			"negative": "Windows|Macintosh|Android"
         },
 		{
             "name": "Apple iPadOS CH",
             "group": 1,
-            "pattern": "(\"?iPadOS\"?\\x1f\"?\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?\"?$)",
+            "pattern": "(\"?iPadOS\"?\\x1f\"?\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?\"?$)",
 			"negative": "Windows|Macintosh|macOS"			
         },
 		
@@ -421,15 +463,27 @@
 			"negative": "CFNetwork"			
         },
 		{
-            "name": "Apple TV Software",
+            "name": "Apple TV Software pt01",
             "group": 1,
             "pattern": "(Apple TV.*OS \\d{1,2}[\\._][\\d\\._]+ like)",
 			"negative": "AddingNegativeRegex"
         },
 		{
-            "name": "Apple TV Software",
+            "name": "Apple TV Software pt02",
             "group": 1,
             "pattern": "(AppleTV[\\d,]+: tvOS/\\d{1,2}[\\.\\d]+) \\(",
+			"negative": "AddingNegativeRegex"			
+        },
+		{
+            "name": "Apple TV Software 2",
+            "group": 1,
+            "pattern": "(\\(tvOS \\d{1,2}[\\.\\d]+; AppleTV).*(Apple TV)",
+			"negative": "AddingNegativeRegex"			
+        },
+		{
+            "name": "Apple TV Software 3",
+            "group": 2,
+            "pattern": "(^AppleTV\\d+,\\d+)(/[\\d\\.]+$)",
 			"negative": "AddingNegativeRegex"			
         },		
 		{
@@ -471,7 +525,7 @@
 		{
             "name": "Tizen Association",
             "group": 1,
-            "pattern": "(Tizen.*\\d{1,2}[\\._]\\d{1,2}([\\._]\\d{1,2})?)",
+            "pattern": "(Tizen.*\\d{2}[\\._\\d]{2}([\\._\\d]{2,3})?)",
 			"negative": "AddingNegativeRegex"			
         }
 ]
